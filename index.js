@@ -3,13 +3,7 @@ import {makeDOMDriver} from '@cycle/dom';
 
 import app from './src/app';
 
-import {html, head} from '@cycle/dom';
 
-const wrapHtml = (vtree, context, clientBundle)=>{
-  return html([
-    head([title('isomorphic cycle')])
-  ]);
-}
 const drivers = {
   DOM: makeDOMDriver('.app')
 };

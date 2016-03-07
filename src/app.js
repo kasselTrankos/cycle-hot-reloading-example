@@ -1,8 +1,13 @@
 import {Observable} from 'rx';
-import {div} from '@cycle/dom';
+import {div, p} from '@cycle/dom';
 
-export default function App ({DOM}) {
+export default function App () {
   return {
-    DOM: Observable.just(div('.hello-world', 'Change me! 1 and 22 next psisidws'))
+    DOM: (
+      div('.hola', [
+        p('bienvebnidp')
+      ])
+    )
+    //Observable.just(div('.hello-world', 'Change me! 1 and 22 next psisidws'))
   };
 }
