@@ -13,7 +13,6 @@ const {sinks, sources} = run(app, drivers);
 if (module.hot) {
   module.hot.accept();
   module.hot.dispose(() => {
-    console.log(sinks, ' jjjj');
     sinks.dispose();
     sources.dispose();
   });
